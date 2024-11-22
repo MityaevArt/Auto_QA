@@ -1,5 +1,6 @@
-﻿.pytest/
+﻿__pycache__/
+*.pyc
 venv/
+.env
 .idea/
-.pytest_cache/
-__pycache__/
+*.log

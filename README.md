@@ -3,15 +3,19 @@
 Проект направлен на автоматизацию проверки API для создания и отслеживания заказов.
 
 ## Необходимые условия
+
 - Python 3.6+
 - Установленные пакеты: pytest, requests
 
 ## Структура проекта
+
 - configuration.py: URL и пути для тестового стенда.
 - data.py: Данные для создания заказа.
-- sender_stand_request.py: Функции и описания тестов.
+- order_api.py: Функции для работы с API.
+- test_order_api.py: Тесты для проверки создания и получения заказа.
 
 ## Шаги автотеста
+
 1. Отправить запрос на создание заказа.
 2. Сохранить трек-номер заказа.
 3. Получить заказ по трек-номеру.
@@ -22,26 +26,22 @@
 ### Установка
 
 1. Клонируйте репозиторий:
-   
+   git clone https://github.com/your/repository.git
 2. Создайте и активируйте виртуальную среду:
 
-   python -m venv venv
-
-На Windows:
+   На Windows: python -m venv venv
    .\venv\Scripts\activate
-
-На macOS/Linux:
+   На macOS/Linux: python3 -m venv venv
    source venv/bin/activate
-   
 
 3. Установите зависимости:
-
-   pip install pytest requests
-     
+      pip install pytest requests
+   
 ### Запуск тестов
 
 Запустите тесты командой:
+   pytest -s
+#### Опция -s покажет все выводы в терминале.
 
-pytest -s
-
-Опция -s покажет все выводы в терминале.
+   
+   
